@@ -5,7 +5,17 @@ FROM mcr.microsoft.com/azure-functions/python:3.0-python3.9
 ENV AzureWebJobsScriptRoot=/home/site/wwwroot \
     AzureFunctionsJobHost__Logging__Console__IsEnabled=true
 
+RUN apt-get update && apt-get install -y --no-install-recommends build-essential libpq-dev r-base poppler-utils tesseract-ocr
+RUN pip3 install --upgrade pip
+
 COPY requirements.txt /
 RUN pip install -r /requirements.txt
 
 COPY . /home/site/wwwroot
+
+ADD companies_house_document.pdf .
+
+
+
+
+

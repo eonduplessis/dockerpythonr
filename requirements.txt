@@ -1,0 +1,13 @@
+azure-functions==1.8.0
+cffi==1.15.0
+Jinja2==3.0.3
+MarkupSafe==2.0.1
+pdf2image==1.16.0
+Pillow==9.0.0
+pycparser==2.21
+pytesseract==0.3.8
+pytz==2021.3
+pytz-deprecation-shim==0.1.0.post0
+rpy2==3.4.5
+tzdata==2021.5
+tzlocal==4.1
